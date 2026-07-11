@@ -48,14 +48,63 @@
 
       </header>
 
+      <section id="cta">
+        <h1>Let's do this</h1>
       <div id="body-form">
+  
+        <form action="/submit-endpoint" method="POST">
+          <div class="form-wrap">
+        <label for="first_name">FIRST NAME</label>
+        <input id="first_name" name="first_name" type="text" pattern="[A-Za-z]+"required>
+        </div>
+      
+          <div class="form-wrap">
+        <label for="last_name">LAST NAME</label>
+        <input id="last_name" name="last_name" type="text" required>
+      </div>
+      
+      <div class="form-wrap">
+        <label for="email">EMAIL</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="form-wrap">
+        <label for="phone">PHONE NUMBER</label>
+        <input id="phone" name="phone" type="tel" pattern="0[0-9]{1,3}[ ]?[0-9]{3,4}[ ]?[0-9]{3,4}"required>
+      </div>
+      
+      <div class="form-wrap">
+        <label for="password">PASSWORD</label>
+        <input id="password" name="password" type="password" required min-length="8">
+      </div>
+      
+      <div class="form-wrap">
+        <label for="password_conf">CONFIRM PASSWORD</label>
+        <input id="password_conf" name="password_conf" type="password" required>
+      </div>
+        </form>
 
-        <form>
-          <label for="first_name" name="first_name">First Name</label>
-          <input id="first_name" type="text"></input>
-          
-          <label for="last_name" name="last_name">Last Name</label>
-          <input id="last_name" type="text"></input>
+      </div>
+
+      </section>
+
+      <div id="cta-end">
+
+    <button type="submit">Create Account</button>
+
+    <a>Already made an Account? <em>Log in</em></a>
+      
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+  
+</body>
+</html>
         </form>
 
       </div>
